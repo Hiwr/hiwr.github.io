@@ -10,7 +10,7 @@ You will find in this page all the information to print the body.
 
 h3. The head
 
-The head is composed of 6 parts:
+The head is composed of the following parts:
 
 
 <div class="model-brick">
