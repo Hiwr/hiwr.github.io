@@ -76,29 +76,22 @@ function load() {
     $("a[href='#"+key+"']").parent().addClass('active');
   }
   latestHash = key;
-  console.log("load: "+key);
   $(".jumbotron").hide();
   $.get("/content/"+key+"/jumbotron.md", function(data) {
 	if(data) {
 	  convert_md(data, $(".jumbotron .container"));
 	  $(".jumbotron").show()
 	}
-  }).fail(function() {
-    console.log(key+" has no jumbotron");
   });
   //load pre-content
   $(".precontent").hide();
   $.get("/content/"+key+"/precontent.md", function(data) {
     convert_md(data, $(".precontent"));
-  }).fail(function() {
-    console.log(key+" has no precontent");
   });
   //load content
   $(".content").hide();
   $.get("/content/"+key+"/content.md", function(data) {
     convert_md(data, $(".content"));
-  }).fail(function() {
-    console.log(key+" has no content");
   });
 }
 
