@@ -162,3 +162,15 @@ div.popup-content {
 .cc {
   float:right;
 }
+
+#piwik-optout {
+  color: #9B7A44;
+  float: none;
+  padding: 5px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+  background-color: #FFFFE0;
+  border: 1px solid #E6DB55;
+  border-radius: 3px;
+  margin: 20px 0px 0px;
+  width:100%;
+}

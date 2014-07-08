@@ -7,3 +7,5 @@ used to implement various scenarios.
 Hiwr is driven by an Olinuxino A13 board, embed two HD cameras, a touch screen
 and 2 dynamixel motors that allow developers to imagine and implement various
 stories.
+
+<iframe id="piwik-optout" src="http://stats-hiwr.apps.zone52.org/index.php?module=CoreAdminHome&action=optOut&language=en"></iframe>
