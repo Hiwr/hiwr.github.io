@@ -2,7 +2,7 @@
   !/assets/img/logo.png!
 </div>
 
-h1. Hiwr */ivɛR/*
+h1. Hiwr %(phonetic)/ivɛR/%
 
 The evolutionary and open source robot.
 
