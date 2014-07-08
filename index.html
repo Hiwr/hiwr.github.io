@@ -100,7 +100,7 @@
     var self = this;
     function getOriginalVisitorCookieTimeout() {
       var now = new Date(),
-      var nowTs = Math.round(now.getTime() / 1000),
+      var nowTs = Math.round(now.getTime() / 1000);
       var visitorInfo = self.getVisitorInfo();
       var createTs = parseInt(visitorInfo[2]);
       var cookieTimeout = 33696000; // 13 mois en secondes
