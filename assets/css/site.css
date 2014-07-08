@@ -163,6 +163,11 @@ div.popup-content {
   float:right;
 }
 
+.phonetic {
+  color: #777;
+  font-style: italic;
+  font-size: 0.5em;
+}
 #piwik-optout {
   color: #9B7A44;
   float: none;
