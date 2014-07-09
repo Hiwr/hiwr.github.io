@@ -46,7 +46,7 @@ The head is composed of the following parts:
 <span class="stl-link" data-url="https://render.githubusercontent.com/view/3d?url=https%3A%2F%2Fraw.githubusercontent.com%2FHiwr%2FHiwr-bodyparts%2Fmaster%2Flong-neck-printable.stl"><i class="fa fa-eye"></i> view</span>
 </div>
 
-h3. Le lower body
+h3. The lower body
 
 The lower body is around 17cm heigh and is composed of three parts.
 
