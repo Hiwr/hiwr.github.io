@@ -58,10 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   float:right;
 }
-
+/*
 .main {
   margin: 25px;
-}
+}*/
 
 .soft-brick, .scenario-brick, .model-brick, .hardware-brick {
   position: relative;
@@ -197,4 +197,19 @@ div.popup-content {
   border-radius: 3px;
   margin: 20px 0px 0px;
   width:100%;
+}
+
+.row.content{
+  padding-left: 15px;
+}
+
+a.navbar-brand{
+  position: relative;
+}
+
+img.Hywr{
+  position: absolute;
+  left: -4px;
+  bottom: 17px;
+  height: 17px;
 }
