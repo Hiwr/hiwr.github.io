@@ -50,11 +50,13 @@ body {
 	margin-top:20px;
 }
 
-
 h1, h2, h3, h4, h5, h6 {
   font-family: Arvo, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h4{
+  border-bottom: solid 1px rgba(8, 22, 37, 0.12);
+}
 .logo {
   float:right;
 }
@@ -62,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 .main {
   margin: 25px;
 }*/
-
+/*
 .soft-brick, .scenario-brick, .model-brick, .hardware-brick {
   position: relative;
   display: inline-block;
@@ -100,18 +102,18 @@ h1, h2, h3, h4, h5, h6 {
 .hardware-brick {
   height: 200px;
 }
-
+*/
 .github-link {
   position: absolute;
   right: 10px;
-  bottom: 5px;
+  top: 0px;
   font-size: 1.5em;
 }
 
 .stl-link {
   position: absolute;
-  right: 10px;
-  bottom: 5px;
+  right: 15px;
+  top: 5px;
   font-size: 1.5em;
   cursor:pointer
 }
@@ -212,4 +214,14 @@ img.Hywr{
   left: -4px;
   bottom: 17px;
   height: 17px;
+}
+
+
+.brick{
+  background-color: rgba(255,255,255,0.2);
+  font-size: 0.9em;
+  margin-top: 10px;
+  padding-bottom: 15px;
+ text-align: justify;
+ 
 }

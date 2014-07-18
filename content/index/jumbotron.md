@@ -1,8 +1,8 @@
 <div class="logo">
-  !/assets/img/logo.png!
+  ![](/assets/img/logo.png)
 </div>
 
-h1. Hiwr %(phonetic)/ivɛR/%
+# Hiwr <span class="phonetic">/ivɛR/</span>
 
 The evolutionary and open source robot.
 

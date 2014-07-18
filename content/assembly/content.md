@@ -1,3 +1,5 @@
-h2. Assembly
+## Assembly
 
-Coming soon, all the instructions for assembling the robot.
+Unfortunalty, we didn't have time yet to produce  a documentation good enough to be shared with you.
+
+If you really want build a robot, contact us, we will be very happy to help you.
