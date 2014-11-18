@@ -1,3 +1,9 @@
+---
+layout: page
+title: Software
+permalink: /software/
+---
+
 ## Specific Software
 
 Hiwr is developed using **<abbr title="Robotics Operating System">[ROS](http://www.ros.org/)</abbr>** and **GNU/Linux**. 
@@ -63,6 +69,7 @@ Combined with following bricks, it becomes easy to build various Hiwr scenarios.
 ### Scenarios
 
 Here are some simple scenarios based on previous bricks.
+
 <div class="row">
 <div class="brick col-md-3">
 	<h4>Simple example</h4>

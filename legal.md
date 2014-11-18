@@ -1,3 +1,9 @@
+---
+layout: page
+title: Legal
+permalink: /legal/
+---
+
 # Legals mentions
 
 ## Property

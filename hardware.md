@@ -1,3 +1,9 @@
+---
+layout: page
+title: Hardware
+permalink: /hardware/
+---
+
 ## Electronic hardware
 
 Hiwr is driven by several hardware pieces. This hardware parts are embedded inside the head and the body models.
@@ -75,6 +81,7 @@ and schematic <a href="https://www.olimex.com/Products/OLinuXino/A13/A13-LCD7/re
 
 Hiwr also embed various part as wires, switch...
 Here is an exhaustive list of every various parts used in Hiwr.
+
 <div class="row">
 <div class="brick col-md-3">
 <h4>Wires</h4>

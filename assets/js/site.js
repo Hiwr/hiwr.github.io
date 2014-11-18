@@ -52,22 +52,11 @@ function disablePopup() {
 }
 
 function load() {
-  var key = 'index';
-  if (window.location.hash) {
-    key = window.location.hash.replace(/^#/, '').replace(/-.*$/, '');
+  var key = '/';
+  key = window.location.pathname;
+  if(key.length>1 && key.lastIndexOf('/') == (key.length-1) ){
+    key = key.slice(0,-1)
   }
-  /*  switch(window.location.hash.replace(/-.*$/,'')) {
-	  case '#software':
-	  case '#hardware':
-	  case '#assembly':
-	  case '#model':
-    case '#legal':
-	    key = window.location.hash.replace(/^#/,'').replace(/-.*$/,'');
-		break;
-	  default:
-	    key = 'index';
-	}
-  }*/
   // prevent reloading inside page
   if (key == latestHash) {
     scrollToAnchor();
@@ -77,38 +66,15 @@ function load() {
 
   $('.navbar-brand').removeClass('active');
   $('.nav li').removeClass('active');
-  if (key === 'index') {
+  if (key === '/') {
     $('.navbar-brand').addClass('active');
   } else {
-    $("a[href='#" + key + "']").parent().addClass('active');
+    debugger;
+    $("a[href='" + key + "']").parent().addClass('active');
   }
   latestHash = key;
-  $(".jumbotron").hide();
 
-  //load pre-content
-  $(".precontent").hide();
-
-  //load content
-  $(".content").hide();
-  $.get("/content/" + key + "/content.md", function(data) {
-
-    convert_md(data, $(".content"));
-
-    $.get("/content/" + key + "/jumbotron.md", function(data) {
-      if (data) {
-        convert_md(data, $(".jumbotron .container"));
-        $(".jumbotron").show()
-      }
-    });
-
-    $.get("/content/" + key + "/precontent.md", function(data) {
-      convert_md(data, $(".precontent"));
-      $(".precontent").show()
-    });
-
-  }).fail(function(){
-      window.location.hash = '';
-  });
+  $(".stl-link").click(showstl);
 
 }
 
@@ -121,18 +87,8 @@ function scrollToAnchor() {
   }, 0, 'easeInSine');
 }
 
-function convert_md(data, elt) {
-  if (!data) return;
-  try {
-    var html = marked.parse(data);
-    elt.html(html);
-    elt.show();
-    $(".stl-link").click(showstl);
-    scrollToAnchor();
-  } catch (e) {
-    console.error("Failed to convert MD with error: ", e);
-  }
-}
+
+
 
 function showstl(event) {
   event.stopImmediatePropagation();
